@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.practicaaa.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_sonidillo_fragment"
+            app:destination="@id/sonidillo_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calculadora_fragment"
+        android:name="com.example.practicaaa.calculadora_fragment"
+        android:label="fragment_calculadora_fragment"
+        tools:layout="@layout/fragment_calculadora_fragment" />
+    <fragment
+        android:id="@+id/sonidillo_fragment"
+        android:name="com.example.practicaaa.sonidillo_fragment"
+        android:label="fragment_sonidillo_fragment"
+        tools:layout="@layout/fragment_sonidillo_fragment" >
+        <action
+            android:id="@+id/action_sonidillo_fragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/web_ragment"
+        android:name="com.example.practicaaa.web_ragment"
+        android:label="fragment_web_ragment"
+        tools:layout="@layout/fragment_web_ragment" />
+    <fragment
+        android:id="@+id/otro_apk_fragment"
+        android:name="com.example.practicaaa.otro_apk_fragment"
+        android:label="fragment_otro_apk_fragment"
+        tools:layout="@layout/fragment_otro_apk_fragment" />
+</navigation>

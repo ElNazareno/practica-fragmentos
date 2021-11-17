@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/gallery_thumb"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/calculadora_fragment"
+            android:icon="@drawable/calculadora"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/sonidillo_fragment"
+            android:icon="@drawable/musica"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/web_ragment"
+            android:icon="@drawable/musica"
+            android:title="Web" />
+        <item
+            android:id="@+id/otro_apk_fragment"
+            android:icon="@drawable/musica"
+            android:title="Otro APK" />
+    </group>
+</menu>
